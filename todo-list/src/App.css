@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #FDFDFD;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  height: 480px;
+  width: 320px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+
+.date-container{
+  height: 60px;
+  width: 100%;
+  background:rgba(211,211 211,0.2);
+  border-bottom:0.3px solid #c5c7d4;
+  position: absolute;
+}
+
+.date{
+  color: #5d75e3;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-left: 20px;
+}
+
+.month{
+  font-size:11px;
+  margin-top:5px;
+  margin-left:20px;
+  color: grey;
+  font-weight:300;
+}
+
+.number-of-tasks{
+  font-size: 13px;
+  position:absolute;
+  top: 17px;
+  right: 15px;
+  color: grey;
+  font-weight:300;
+}
+
+.task-list-container{
+  height: 290px;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.input-div{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background:rgba(211,211,211,0.2);
+  border-top: 0.5px solid #c5c7d4;
+}
+
+.task-input{
+  all:unset;
+  height: 38px;
+  width: 225px;
+  background: white;
+  border-radius: 25px;
+  position: absolute;
+  top:50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  padding-left: 15px;
+  caret-color: #227BCB;
+  border:0.5px solid #c5c7d4;
+  color: grey;
+}
+
+/* para depois que estiver funcionando o js */
+.add-task-btn{
+  all: unset;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #FA6E6F;
+  position:absolute;
+  top: 50%;
+  right: -5px;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+}
+
+.tasks-menu-container {
+  border-bottom: 0.5px solid #c5c7d4;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background:rgba(211,211,211,0.2);
+}
+
+.tasks-menu-container > span{
+color:grey;
+font-size: 13px;
+margin-left:15px;
+position:relative;
+left: -38px;
+cursor: pointer;
+}
+
+.clear-all-btn{
+  all: unset;
+  position: relative;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  color: white;
+  background: #5d75e3;
+  padding:5px;
+  border-radius: 3px;
+}
+
+/* para depois que estiver funcionando o js */
+.task-list{
+  height:50px;
+  width: 100%;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-bottom:0.5px solid #c5c7d4;
+}
+
+.checkbox{
+  position:absolute;
+  top: 50%;
+  left:25px;
+  transform: translate(-50%, -50%);
+  }
+
+.task{
+  color: rgba(128, 128, 128,0.9);
+  font-size: 12px;
+  position:relative;
+  top: 50%;
+  margin-left:160px;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  font-weight:300;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 15px;
+  }
+
+  .fa-ellipsis{
+  color: rgba(128, 128, 128,0.9);
+  float: right;
+  margin-right:15px;
+  font-size: 13px;
+  }
