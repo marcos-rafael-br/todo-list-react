@@ -178,11 +178,82 @@ cursor: pointer;
 ::placeholder {
   color: grey;
   font-size: 15px;
-  }
+}
 
-  .fa-ellipsis{
+.fa-ellipsis{
   color: rgba(128, 128, 128,0.9);
   float: right;
   margin-right:15px;
   font-size: 13px;
+}
+
+.checked{
+  text-decoration: line-through;
   }
+
+.menu{
+  height:35px;
+  width:50px;
+  background: white;
+  position:absolute;
+  right:0;
+  top: 5px;
+  right: 15px;
+  border:0.5px solid #c5c7d4;
+  transform: scale(0.25);
+  visibility:hidden;
+  opacity: 0;
+  transform-origin: 100% 100%;
+  white-space:nowrap;
+}
+
+.edit-btn,.delete-btn{
+  font-size: 8px;
+  word-spacing:3px;
+  cursor: pointer;
+  color: grey;
+  position: relative;
+  left:5px;
+}
+
+.edit-btn{
+  position:absolute;
+  top: 3px;
+  right: 25px;
+}
+
+.delete-btn{
+  position:absolute;
+  top: 19px;
+  right:15px;
+  }
+
+.show{
+  transform:scale (1);
+  transition:transform 0.2s ease;
+  visibility: visible;
+  opacity: 1;
+}
+
+.active {
+  text-decoration:underline;
+}
+
+.no-task-message {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  color: rgba(128, 128, 128, 0.5);
+  white-space: nowrap;
+  font-size:11px;
+}
+
+.fa-clipboard-list {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  color: rgba(128, 128, 128, 0.3);
+  font-size:50px;
+}
